@@ -3,22 +3,21 @@ import service.StorageHandler;
 
 public class StorageApp{
     public static void main(String[] args) {
-    //     StorageHandler storage = new StorageHandler(new PrimitiveStorageHandler());
-    //        storage.set("Akshay",100);
-    //    storage.get("Akshay");
+
 
     PrimitiveStorageHandler primitiveDataStoreHandler = new PrimitiveStorageHandler();
        primitiveDataStoreHandler.set("Akshay", 1);
 
-    //    dataStoreHandler.set("Akshay", 200);
        primitiveDataStoreHandler.get("Akshay");
-       primitiveDataStoreHandler.set("Akshay", "Kumar");
-       System.out.println(primitiveDataStoreHandler.get("Akshay").toString());
+    //    primitiveDataStoreHandler.set("Akshay", true);
+       System.out.println(primitiveDataStoreHandler.get("Akshay"));
+       primitiveDataStoreHandler.set("Lalalaaaa", 1);
+       primitiveDataStoreHandler.set("Hello", "World");
+       primitiveDataStoreHandler.delete("23");
 
-    //    dataStoreHandler.set("Akshay", "3000");
-    //    dataStoreHandler.delete("Akshay");
-    //    dataStoreHandler.set("Akshay", "3000");
-    //    dataStoreHandler.get("Akshay");
-        
+       System.out.println(primitiveDataStoreHandler.getKeys());
+
+
+        //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
     }
 }

@@ -16,7 +16,11 @@ public class StorageHandler {
     }
 
     public void delete(String key){
+         primitiveStoreHandler.delete(key);
+    }
 
+    public String keys(){
+        return primitiveStoreHandler.getKeys();
     }
     
 }
